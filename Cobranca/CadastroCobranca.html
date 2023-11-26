@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" type="text/css" href=".\css\main.css" />
+    <link rel="stylesheet" type="text/css" href="/Seminario/css/main.css" />
     <title>Seminário Temático VIII</title>
   </head>
 
@@ -32,12 +32,8 @@
           <span id="hamburger"></span>
         </button>
         <ul id="menu" role="menu">
-          <li><a href="/Seminario/Cliente/Cliente.html">Lista Cliente</a></li>
-          <li>
-            <a href="/Seminario/Cobranca/CadastroCobranca.html"
-              >Cadastra Cobrança</a
-            >
-          </li>
+          <li><a href="/Seminario/index.html">Cadastra Cliente</a></li>
+          <li><a href="/Seminario/Cobranca/Cobranca.html">Lista Cobrança</a></li>
         </ul>
       </nav>
     </header>
@@ -46,7 +42,7 @@
       
      -->
     <main>
-      <div class="container">
+      <div class="container_cadastro">
         <!-- <div class="form-image">
           <img src="\imag\foto.png" alt="" />
         </div> -->
@@ -54,7 +50,7 @@
           <form action="#">
             <div class="form-header">
               <div class="title">
-                <h1>Cadastro de Cliente</h1>
+                <h1>Cadastro de Cobrança</h1>
               </div>
               <!-- <div class="login-button">
                 <button><a href="#">Entrar</a></button>
@@ -63,49 +59,53 @@
 
             <div class="input-group">
               <div class="input-box">
-                <label for="firstname">Nome</label>
+                <label for="cliente_id">ID do Cliente</label>
                 <input
-                  id="firstname"
-                  type="text"
-                  name="firstname"
-                  placeholder="Digite seu nome"
-                  required
-                />
-              </div>
-
-              <div class="input-box">
-                <label for="email">E-mail</label>
-                <input
-                  id="email"
-                  type="email"
-                  name="email"
-                  placeholder="Digite seu e-mail"
-                  required
-                />
-              </div>
-
-              <div class="input-box">
-                <label for="number">Celular</label>
-                <input
-                  id="number"
-                  type="tel"
-                  name="number"
-                  placeholder="(xx) xxxx-xxxx"
-                  required
-                />
-              </div>
-
-              <div class="input-box">
-                <label for="cep">CPF</label>
-                <input
-                  id="cpf"
+                  id="cliente_id"
                   type="number"
-                  name="cpf"
-                  placeholder="000.000.000-00"
+                  name="cliente_id"
+                  placeholder="Digite o ID do Cliente"
+                  required
+                />
+              </div>
+
+              <div class="input-box">
+                <label for="valor">Valor devedor</label>
+                <input
+                  id="valor"
+                  type="number"
+                  name="valor"
+                  placeholder="Digite o Valor"
+                  required
+                />
+              </div>
+
+              <div class="input-box">
+                <label for="data_vencimento">Data do Vencimento</label>
+                <input
+                  id="data_vancimento"
+                  type="date"
+                  name="data_vancimento"
+                  placeholder=""
                   required
                 />
               </div>
             </div>
+            <div class="gender-inputs">
+              <div class="gender-title">
+                  <h6>Status</h6>
+              </div>
+
+              <div class="gender-group">
+                  <div class="gender-input">
+                      <input id="female" type="radio" name="gender">
+                      <label for="female">Vencimeto</label>
+                  </div>
+
+                  <div class="gender-input">
+                      <input id="male" type="radio" name="gender">
+                      <label for="male">Não Vencimento</label>
+                  </div>
 
             <div class="continue-button">
               <button><a href="#">Continuar</a></button>
@@ -163,6 +163,6 @@
         </div>
       </div>
     </footer>
-    <script src=".\js\main.js"></script>
+    <script src="/Seminario/js/main.js"></script>
   </body>
 </html>

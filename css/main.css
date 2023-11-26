@@ -57,7 +57,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--color-neutral-100);
+  background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 14%, rgba(45,45,48,1) 45%, rgba(53,82,88,1) 100%);
 }
 
 #menu {
@@ -83,17 +84,25 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--color-neutral-90);
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,1) 14%, rgba(45,45,48,1) 45%, rgba(53,82,88,1) 100%);
 }
 
 .container {
-  width: 100%;
-  height: 100vh;
+  width: 55%;
+  height: 90vh;
   display: flex;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
 }
 
-.form-image {
+.container_cadastro {
+  width: 70%;
+  height: 90vh;
+  display: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+/* .form-image {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -104,22 +113,23 @@ main {
 
 .form-image img {
   width: 31rem;
-}
+} */
 
 .form {
-  width: 64%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-neutral-30);
+  background: rgb(56,81,96);
+  background: radial-gradient(circle, rgba(56,81,96,1) 8%, rgba(84,90,98,1) 98%);
   padding: 3rem;
 }
 
 .form-header {
   margin-bottom: 3rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between
 }
 
 .form-header h1::after {
@@ -127,14 +137,14 @@ main {
   display: block;
   width: 5rem;
   height: 0.3rem;
-  background-color: var(--color-neutral-90);
+  background: linear-gradient(120deg, #1c1a1a, #f5f5f5);
   margin: 0 auto;
   position: absolute;
   border-radius: 10px;
 }
 
 .form h1{
-  color: var(--color-neutral-90);
+  color: #000;
 }
 
 .input-group {
@@ -167,7 +177,8 @@ main {
   outline: 1px solid #6c63ff;
 }
 
-.input-box label {
+.input-box label,
+.gender-title h6 {
   font-size: 0.75rem;
   font-weight: 600;
   color: #000000c0;
@@ -176,6 +187,31 @@ main {
 .input-box input::placeholder {
   color: #000000be;
 }
+
+/* Cadastro Status */
+.gender-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.62rem;
+  padding: 0 0.5rem;
+}
+
+.gender-input {
+  display: flex;
+  align-items: center;
+}
+
+.gender-input input {
+  margin-right: 0.35rem;
+}
+
+.gender-input label {
+  font-size: 0.81rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+/* fim... */
 
 .continue-button button {
   width: 100%;
@@ -202,7 +238,7 @@ main {
 
 footer {
   width: 100%;
-  color: var(--color-neutral-40);
+  background: linear-gradient(120deg, #0d0d0d, #1c1a1a);
 }
 
 h1 {
@@ -292,7 +328,7 @@ h1 {
     right: 0px;
     background: var(--color-neutral-90);
     transition: 0.6s;
-    z-index: 1000;
+    z-Cobranca: 1000;
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
@@ -365,7 +401,7 @@ h1 {
   }
   .input-group {
     flex-direction: column;
-    z-index: 5;
+    z-Cobranca: 5;
     padding-right: 5rem;
     max-height: 10rem;
     overflow-y: scroll;
