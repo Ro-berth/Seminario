@@ -33,8 +33,12 @@
   font-family: sans-serif;
 }
 
-#menu a:hover {
+/* #menu a:hover {
   background: rgba(0, 0, 0, 0.05);
+} */
+
+#menu a:hover {
+  background-color: #6b63fff1;
 }
 
 /* .logo {
@@ -58,7 +62,7 @@
   align-items: center;
   justify-content: space-between;
   background: rgb(0,0,0);
-background: radial-gradient(circle, rgba(0,0,0,1) 14%, rgba(45,45,48,1) 45%, rgba(53,82,88,1) 100%);
+  background: radial-gradient(circle, rgba(0,0,0,1) 14%, rgba(45,45,48,1) 45%, rgba(53,82,88,1) 100%);
 }
 
 #menu {

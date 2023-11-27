@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
 
 * {
+  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
 }
 
 /* body {
@@ -17,13 +18,13 @@
 } */
 
 #menu a {
-  color: var(--color-neutral-30);
+  color: #fff;
   text-decoration: none;
   font-family: sans-serif;
 }
 
 #menu a:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background-color: #6b63fff1;
 }
 
 /* .logo {
@@ -81,7 +82,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(120deg, #1c1a1a, #b5903f);
+  background: rgb(108,110,119);
+  background: linear-gradient(0deg, rgba(108,110,119,1) 26%, rgba(62,62,62,1) 47%);
 }
 
 button {
@@ -92,8 +94,11 @@ button {
   width: 90%;
   height: 80%;
   border-radius: 10px;
-  background: white;
-}
+  background: radial-gradient(
+    circle,
+    rgba(145, 145, 149, 1) 0%,
+    rgba(102, 102, 82, 0.9416141456582633) 35%
+  );
 
 .header {
   min-height: 70px;
@@ -147,7 +152,7 @@ thead {
 }
 
 tr {
-  border-bottom: 1px solid rgb(238, 235, 235) !important;
+  border-bottom: 2px solid rgb(0, 0, 0) !important;
 }
 
 tbody tr td {
@@ -210,7 +215,7 @@ tbody tr td.acao {
   }
 }
 
-.modal-container {
+/* .modal-container {
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -259,7 +264,7 @@ tbody tr td.acao {
   border: none;
   background-color: rgb(57, 57, 226);
   color: white;
-}
+} */
 
 .active {
   display: flex;
